@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
  *     path="/api/posts",
  *     summary="Создание",
  *     tags={"Post"},
+ *     security={{ "bearerAuth": {} }},
  *
  *     @OA\RequestBody(
  *          @OA\JsonContent(
@@ -38,6 +39,7 @@ use App\Http\Controllers\Controller;
  *      path="/api/posts",
  *      summary="Список",
  *      tags={"Post"},
+ *      security={{ "bearerAuth": {} }},
  *
  *      @OA\Response(
  *          response=200,
@@ -56,6 +58,7 @@ use App\Http\Controllers\Controller;
  *       path="/api/posts/{post}",
  *       summary="Единичная запись",
  *       tags={"Post"},
+ *      security={{ "bearerAuth": {} }},
  *       @OA\Parameter(
  *           description="ID поста",
  *           in="path",
@@ -80,6 +83,7 @@ use App\Http\Controllers\Controller;
  *        path="/api/posts/{post}",
  *        summary="Обновление",
  *        tags={"Post"},
+ *        security={{ "bearerAuth": {} }},
  *        @OA\Parameter(
  *            description="ID поста",
  *            in="path",
@@ -116,6 +120,7 @@ use App\Http\Controllers\Controller;
  *         path="/api/posts/{post}",
  *         summary="Удаление",
  *         tags={"Post"},
+ *         security={{ "bearerAuth": {} }},
  *         @OA\Parameter(
  *             description="ID поста",
  *             in="path",
